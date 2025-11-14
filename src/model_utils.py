@@ -3,8 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))        # /app/src
-MODEL_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "models"))
+MODEL_DIR = os.path.join(os.getcwd(), "models")
 
 SCALER_PATH = os.path.join(MODEL_DIR, "scaler.joblib")
 KMEANS_PATH = os.path.join(MODEL_DIR, "kmeans_model.joblib")
