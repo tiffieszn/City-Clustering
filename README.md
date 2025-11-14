@@ -1,3 +1,14 @@
+---
+title: City Clustering App
+emoji: 🏙️
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: "1.33.0"
+app_file: app.py
+pinned: false
+---
+
 # City Lifestyle Clustering
 This project clusters cities using KMeans on a city lifestyle dataset. It includes:
 - Training script: `src/train_model.py`
