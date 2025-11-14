@@ -4,9 +4,9 @@ import numpy as np
 import pandas as pd
 
 MODEL_DIR = os.environ.get('MODEL_DIR', './models')
-SCALER_PATH = os.path.join(MODEL_DIR, 'scaler.joblib')
-KMEANS_PATH = os.path.join(MODEL_DIR, 'kmeans_model.joblib')
-PCA_PATH = os.path.join(MODEL_DIR, 'pca.joblib')
+SCALER_PATH = os.path.join(MODEL_DIR, './models/scaler.joblib')
+KMEANS_PATH = os.path.join(MODEL_DIR, './models/kmeans_model.joblib')
+PCA_PATH = os.path.join(MODEL_DIR, './models/pca.joblib')
 CENTERS_PATH = os.path.join(MODEL_DIR, 'cluster_centers.csv')
 
 scaler = None
