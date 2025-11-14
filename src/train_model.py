@@ -60,8 +60,8 @@ if __name__ == '__main__':
     df_out['pca_x'] = coords[:,0]
     df_out['pca_y'] = coords[:,1]
 #save model artifacts
-    joblib.dump(km, os.path.join(MODEL_DIR, 'kmeans.joblib'))
-    joblib.dump(scaler, os.path.join(MODEL_DIR, 'scaler.joblib'))
+    joblib.dump(km, os.path.join(MODEL_DIR, 'kmeans_model.joblib'))
+    joblib.dump(scaler, os.path.join(MODEL_DIR, 'scaler.joblib'), compress=3)
     joblib.dump(pca, os.path.join(MODEL_DIR, 'pca.joblib'))
     df_out.to_csv(os.path.join(MODEL_DIR, 'clustered_cities.csv'), index=False)
 #save cluster centers on og ft scale

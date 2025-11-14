@@ -5,7 +5,7 @@ import pandas as pd
 
 MODEL_DIR = os.environ.get('MODEL_DIR', './models')
 SCALER_PATH = os.path.join(MODEL_DIR, 'scaler.joblib')
-KMEANS_PATH = os.path.join(MODEL_DIR, 'kmeans.joblib')
+KMEANS_PATH = os.path.join(MODEL_DIR, 'kmeans_model.joblib')
 PCA_PATH = os.path.join(MODEL_DIR, 'pca.joblib')
 CENTERS_PATH = os.path.join(MODEL_DIR, 'cluster_centers.csv')
 
