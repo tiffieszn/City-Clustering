@@ -3,11 +3,13 @@ import os
 import numpy as np
 import pandas as pd
 
-MODEL_DIR = os.environ.get('MODEL_DIR', './models')
-SCALER_PATH = os.path.join(MODEL_DIR, './models/scaler.joblib')
-KMEANS_PATH = os.path.join(MODEL_DIR, './models/kmeans_model.joblib')
-PCA_PATH = os.path.join(MODEL_DIR, './models/pca.joblib')
-CENTERS_PATH = os.path.join(MODEL_DIR, 'cluster_centers.csv')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_DIR = os.path.join(BASE_DIR, "models")
+
+SCALER_PATH = os.path.join(MODEL_DIR, "scaler.joblib")
+KMEANS_PATH = os.path.join(MODEL_DIR, "kmeans_model.joblib")
+PCA_PATH = os.path.join(MODEL_DIR, "pca.joblib")
+CENTERS_PATH = os.path.join(MODEL_DIR, "cluster_centers.csv")
 
 scaler = None
 kmeans = None
